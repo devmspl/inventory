@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventari</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productname">Emri i produktit</string>
+    <string name="description">Përshkrim</string>
+    <string name="code">Kodi</string>
+    <string name="date">Data</string>
+    <string name="quality">Cilësia</string>
+    <string name="costprice">Çmimi i kostos</string>
+    <string name="sellingprice">Çmimi i shitjes</string>
+    <string name="getstarted">Fillo</string>
+    <string name="login">Identifikohu</string>
+    <string name="forgotpass">Keni harruar fjalëkalimin?</string>
+    <string name="donthaveacc">nuk keni një llogari</string>
+    <string name="signup">Regjistrohu</string>
+    <string name="createanaccont">Krijo nje llogari</string>
+    <string name="name">Emri</string>
+    <string name="phnnumber">Numri i telefonit</string>
+    <string name="password">Fjalëkalimi</string>
+    <string name="confirmpass">Konfirmo fjalëkalimin</string>
+    <string name="alreadhaveaccout"> Tashmë nuk keni një llogari</string>
+    <string name="selectlang">Zgjidh gjuhen</string>
+    <string name="listofshops">lista e dyqaneve</string>
+    <string name="companyname">Emri i Kompanise</string>
+    <string name="shopaddress">Adresa e dyqanit</string>
+    <string name="content">përmbajtja</string>
+    <string name="submit">Paraqisni</string>
+    <string name="addproduct">Shtoni produktin</string>
+    <string name="customer">Klienti</string>
+    <string name="liquidetion">Likuidimi</string>
+    <string name="orders">Porositë</string>
+    <string name="balance">ekuilibër</string>
+    <string name="custumername">Emri i Klientit</string>
+    <string name="address">Adresë</string>
+    <string name="customeremail">Email-i i klientit</string>
+    <string name="contactnum">Numri i kontaktit</string>
+    <string name="saleinlek">Shitje ne leke</string>
+    <string name="saleineuro">Shitje ne Euro</string>
+    <string name="totinventory">Inventari total</string>
+    <string name="instock">Në magazinë</string>
+    <string name="soldinventory">Inventari i shitur</string>
+    <string name="totinventorycost">Kostoja totale e inventarit</string>
+    <string name="recentorders">Porositë e fundit</string>
+    <string name="product">Produkt</string>
+    <string name="changepassword">Ndrysho fjalekalimin</string>
+    <string name="newpassword">Fjalëkalim i ri</string>
+    <string name="confirmpassword">Konfirmo fjalëkalimin</string>
+    <string name="createstore">Krijo dyqan</string>
+    <string name="contact">Numri i kontaktit</string>
+    <string name="productcode">Kodi i produktit:</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

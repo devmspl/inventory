@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottomsheetdialog"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvforgotpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="22dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your email for the verification process,\nwe will send you 4 digits code to your email"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/grey"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/etforgotemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="danielsbros@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:padding="15dp"
+            android:imeOptions="actionDone"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/grey"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="5dp"/>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnsendotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorner2"
+        android:text="Send Otp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

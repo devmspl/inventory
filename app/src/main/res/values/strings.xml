@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productname">Product Name</string>
+    <string name="description">Description</string>
+    <string name="code">Code</string>
+    <string name="date">Date</string>
+    <string name="quality">Quality</string>
+    <string name="costprice">Cost Price</string>
+    <string name="sellingprice">Selling Price</string>
+    <string name="getstarted">Get Started</string>
+    <string name="login">Login</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="donthaveacc">dont have an account</string>
+    <string name="signup">Sign up</string>
+    <string name="createanaccont">Create an account</string>
+    <string name="name">Name</string>
+    <string name="phnnumber">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirmpass">Confirm Password</string>
+    <string name="alreadhaveaccout">Already have an account</string>
+    <string name="selectlang">Select Language</string>
+    <string name="listofshops">List of shops</string>
+    <string name="companyname">Company name</string>
+    <string name="shopaddress">Shop Address</string>
+    <string name="content">Content</string>
+    <string name="submit">Submit</string>
+    <string name="addproduct">Add product</string>
+    <string name="customer">Customer</string>
+    <string name="liquidetion">Liquidation</string>
+    <string name="orders">Orders</string>
+    <string name="balance">Balance</string>
+    <string name="custumername">Customer Name</string>
+    <string name="address">Address</string>
+    <string name="customeremail">Customer Email</string>
+    <string name="contactnum">Contact Number</string>
+    <string name="saleinlek">Sale in Lek</string>
+    <string name="saleineuro">Sale in Euro</string>
+    <string name="totinventory">Inventari total</string>
+    <string name="instock">In stock</string>
+    <string name="soldinventory">Sold Inventory</string>
+    <string name="totinventorycost">Total Inventory Cost</string>
+    <string name="recentorders">Recent Orders</string>
+    <string name="product">Product</string>
+    <string name="changepassword">Change Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confirmpassword">Confrim Password</string>
+    <string name="createstore">Create Store</string>
+    <string name="contact">Contact Number</string>
+    <string name="productcode">Product Code:</string>
+
+
+</resources>

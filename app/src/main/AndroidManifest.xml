@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.inventory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+
+    <application
+        android:name=".Utlis.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/label"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/label"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inventory"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.UpdateShop.UpdateShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductDetailsActivity.UpdateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpdateShop.ShopDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.Activiti.HomeNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.InvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.ExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.Invoice2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.Expenses2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.Income2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.IncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.BookKeppingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.ShippingAddressesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.SalesProductDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.SalesCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.salesTotalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.SalesDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.EarningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.CustmorAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.CustomerDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Activiti.CaptureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductDetailsActivity.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SelectLangaugeActivity.SelectLangaugeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Activiti.HomeActiivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SearchProductActivity.SearchProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.ViewProductActivity.ViewProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.HomeMainActivity.HomeMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service
+            android:name=".Firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/applogo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/black" />
+
+        <activity
+            android:name=".Activities.Activiti.LoginActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
