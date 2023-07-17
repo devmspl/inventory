@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragment.HomeFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/appcolor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="1">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="0.95">-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/storeimage"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/applogo" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvstorename"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:fontFamily="@font/poppins_bold"-->
+<!--                            android:text="Meander Store"-->
+<!--                            android:textColor="@color/black" />-->
+<!--        </LinearLayout>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/imgadd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:background="@drawable/roundcorner2"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:background="@drawable/circledrawble"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:src="@drawable/ic_add"-->
+<!--                app:tint="@color/appcolor" />-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="15dp"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:text="Add Shop"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+    <EditText
+        android:id="@+id/etSearchShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundcorner_stroke3"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:hint="Search Shop"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="List of Shops"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <GridView
+        android:id="@+id/grdiview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:numColumns="2"
+        android:layout_margin="20dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

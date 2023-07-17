@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homenavigationgraph.xml"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.app.inventory.Fragments.HomeFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_getProductByShopIdFragment"
+            app:destination="@id/getProductByShopIdFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_searchShopFragment"
+            app:destination="@id/searchShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getProductByShopIdFragment"
+        android:name="com.app.inventory.Fragments.ProductGetByShopIdFragment.ProductGetByShopIdFragment"
+        android:label="fragment_get_product_by_shop_id"
+        tools:layout="@layout/fragment_get_product_by_shop_id" >
+        <action
+            android:id="@+id/action_getProductByShopIdFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/action_getProductByShopIdFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_getProductByShopIdFragment_to_searchproductFragment"
+            app:destination="@id/searchproductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.app.inventory.Fragments.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <action
+            android:id="@+id/action_productDetailsFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchproductFragment"
+        android:name="com.app.inventory.Fragments.SearchFragment.SearchProductFragment"
+        android:label="fragment_searchproduct"
+        tools:layout="@layout/fragment_searchproduct" >
+        <action
+            android:id="@+id/action_searchproductFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchShopFragment"
+        android:name="com.app.inventory.Fragments.SearchShopFragment.SearchShopFragment"
+        android:label="fragment_search_shop"
+        tools:layout="@layout/fragment_search_shop" >
+        <action
+            android:id="@+id/action_searchShopFragment_to_getProductByShopIdFragment"
+            app:destination="@id/getProductByShopIdFragment" />
+    </fragment>
+</navigation>

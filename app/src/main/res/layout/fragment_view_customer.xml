@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Fragments.ViewCustomerFragment.ViewCustomerFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/appcolor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp" />
+
+    <ImageView
+        android:id="@+id/imgadd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_margin="30dp"
+        android:background="@drawable/circledrawble"
+        android:src="@drawable/ic_add" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/customer"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etSearchCustmor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/greylight"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawableTint="@color/black"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customerRecyleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="30dp" />
+
+</LinearLayout>

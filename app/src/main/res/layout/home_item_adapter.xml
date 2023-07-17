@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="175dp"
+    android:background="#E4DEDE"
+    android:layout_height="156dp">
+    <ImageView
+        android:id="@+id/homeGird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/home_grid"/>
+    <TextView
+        android:id="@+id/InventoryHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Inventory"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"/>
+
+
+</LinearLayout>

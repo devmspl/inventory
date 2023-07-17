@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProductGetByidFragment.ProductGetByIdFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/appcolor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp" />
+    <LinearLayout
+        android:id="@+id/addPRoduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundcorner2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgadd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circledrawble"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_add"
+            app:tint="@color/appcolor" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="Product"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp" />-->
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etsearchproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundcorner_stroke3"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:hint="Search Product"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <GridView
+        android:id="@+id/grdiview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:numColumns="2"
+        android:scrollbars="none" />
+
+</LinearLayout>
