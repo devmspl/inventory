@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddShopFragement.AddShopFragement">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/appcolor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:src="@drawable/applogo" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createstore"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/etcompanyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcornerstroke"
+            android:hint="@string/companyname"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/lightblack" />
+
+        <EditText
+            android:id="@+id/etshopaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundcornerstroke"
+            android:hint="@string/shopaddress"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/lightblack" />
+
+        <EditText
+            android:id="@+id/etshopemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundcornerstroke"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/lightblack" />
+
+        <EditText
+            android:id="@+id/etshopcontactnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundcornerstroke"
+            android:hint="@string/contactnum"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="13"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/lightblack" />
+        <ImageView
+            android:id="@+id/addimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/grey"
+            android:src="@drawable/addimages"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvaddimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add image"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <Button
+            android:id="@+id/btsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/roundcorner"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_2"
+    app:startDestination="@id/allViewofShopFragment">
+
+    <fragment
+        android:id="@+id/allViewofShopFragment"
+        android:name="com.app.inventory.Fragments.ShopGetByUserIdFragment.ShopgetByUserIdFragment"
+        android:label="fragment_all_view_shop"
+        tools:layout="@layout/fragment_shop_getby_uerid" >
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_viewCustomerFragment"
+            app:destination="@id/viewCustomerFragment" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_productsFragment2"
+            app:destination="@id/productsFragment2" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_productGetByIdFragment"
+            app:destination="@id/productGetByIdFragment" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_bookKeppingActivity"
+            app:destination="@id/bookKeppingActivity" />
+        <action
+            android:id="@+id/action_allViewofShopFragment_to_updateShopActivity"
+            app:destination="@id/updateShopActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.app.inventory.Fragments.InventoryFragment.InventoryFragment"
+        android:label="fragment_inventory"
+        tools:layout="@layout/fragment_inventory" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.app.inventory.Fragments.AddProductFragment.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+
+        <action
+            android:id="@+id/action_addProductFragment_to_allViewofShopFragment"
+            app:destination="@id/allViewofShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.app.inventory.Fragments.BalanceFragment.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" >
+        <action
+            android:id="@+id/action_balanceFragment_to_allViewofShopFragment"
+            app:destination="@id/allViewofShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewCustomerFragment"
+        android:name="com.app.inventory.Fragments.ViewCustomerFragment.ViewCustomerFragment"
+        android:label="fragment_view_customer"
+        tools:layout="@layout/fragment_view_customer" >
+
+        <action
+            android:id="@+id/action_viewCustomerFragment_to_customerDetailsFragment"
+            app:destination="@id/customerDetailsFragment" />
+        <action
+            android:id="@+id/action_viewCustomerFragment_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productGetByIdFragment"
+        android:name="com.app.inventory.Fragments.ProductGetByidFragment.ProductGetByIdFragment"
+        android:label="fragment_productgetbyid"
+        tools:layout="@layout/fragment_productgetbyid" >
+        <action
+            android:id="@+id/action_productGetByIdFragment_to_productDetailsActivity2"
+            app:destination="@id/productDetailsActivity2" />
+        <action
+            android:id="@+id/action_productGetByIdFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_productGetByIdFragment_to_addProductFragment2"
+            app:destination="@id/addProductFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/productDetailsActivity2"
+        android:name="com.app.inventory.Activities.ProductDetailsActivity.ProductDetailsActivity"
+        android:label="activity_product_details"
+        tools:layout="@layout/activity_product_details" />
+    <fragment
+        android:id="@+id/productsFragment2"
+        android:name="com.app.inventory.Fragments.ProductsFragment.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <activity
+        android:id="@+id/bookKeppingActivity"
+        android:name="com.app.inventory.Activities.Activiti.BookKeppingActivity"
+        android:label="activity_book_kepping"
+        tools:layout="@layout/activity_book_kepping" />
+    <activity
+        android:id="@+id/updateShopActivity"
+        android:name="com.app.inventory.Activities.UpdateShop.ShopDetailsActivity"
+        android:label="activity_update_shop"
+        tools:layout="@layout/activity_shop_details" />
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="com.app.inventory.Fragments.CustomerDetailsFragment.CustomerDetailsFragment"
+        android:label="fragment_customer_details"
+        tools:layout="@layout/fragment_customer_details" >
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_custmorUpdateFragment"
+            app:destination="@id/custmorUpdateFragment" />
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_viewCustomerFragment"
+            app:destination="@id/viewCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/custmorUpdateFragment"
+        android:name="com.app.inventory.Fragments.CustomerDetailsFragment.CustmorUpdateFragment"
+        android:label="fragment_custmor_update"
+        tools:layout="@layout/fragment_custmor_update" >
+
+        <action
+            android:id="@+id/action_custmorUpdateFragment_to_viewCustomerFragment"
+            app:destination="@id/viewCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.app.inventory.Fragments.AddCustomerFragment.AddCustomerFragment"
+        android:label="fragment_add_customer"
+        tools:layout="@layout/fragment_add_customer" />
+</navigation>

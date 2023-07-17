@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Activities.Activities.MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/appcolor" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+       app:cardBackgroundColor="@color/white"
+        app:cardElevation="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/applogo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zgjidh gjuhen"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/radiolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="16dp"
+            android:checked="true"
+            android:gravity="start|center"
+            android:buttonTint="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:text="english"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/albanian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+
+            android:buttonTint="@color/black"
+            android:gravity="start|center"
+            android:layout_gravity="center_horizontal"
+            android:textDirection="locale"
+            android:padding="16dp"
+            android:text="shqip"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:layout_marginHorizontal="60dp"
+        android:visibility="invisible"
+        android:background="@color/appcolor"
+        android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>

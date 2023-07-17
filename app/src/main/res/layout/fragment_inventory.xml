@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greylight"
+    android:orientation="vertical"
+    tools:context=".Fragments.InventoryFragment.InventoryFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/bgspinner2"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:background="@drawable/roundcorner2"
+            android:text="Year"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"/>
+        <Spinner
+            android:id="@+id/spinnermonth"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/bgspinner2"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/inventorygridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" />
+
+
+</LinearLayout>
